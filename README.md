@@ -1,7 +1,5 @@
 # beam-hudi-example
 An example to show how to make Apache Beam write data to Apache Hudi, and read data from Apache Hudi.
-## Requirements
-* The [beam-datalake](https://github.com/nanhu-lab/beam-datalake) project needs to be compiled and installed first.  
 ## Quickstart
 Test cases are given in the BeamHudiTest document.
 1. Then, use testHudiWrite() to write the data to Apache Hudi. In testHudiWrite(), the simulated data is created, then the simulated data is converted by Apache Beam (converting the user_name to uppercase), and finally written to Apache Hudi.
@@ -16,7 +14,7 @@ A few important dependencies are shown below, and others are seen in the pom.xml
 </properties>
 <dependencies>
     <dependency>
-        <groupId>org.nanhulab</groupId>
+        <groupId>io.github.nanhu-lab</groupId>
         <artifactId>beam-datalake</artifactId>
         <version>1.0.0</version>
     </dependency>
